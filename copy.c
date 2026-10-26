@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 
     bufferSize = (size_t)strtoull(argv[3], NULL, 10);
 
-    buffer = malloc(bufferSize);
+    buffer = (char *)malloc(sizeof(char) * bufferSize);
     if (!buffer) {
         perror("malloc");
         exit(1);
