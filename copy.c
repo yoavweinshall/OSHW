@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
         exit(1);
     }
 
-    bufferSize = (size_t)strtoull(argv[3], NULL, 10);
+    bufferSize = (size_t)sscanf(argv[3],"%d",&n);
 
     buffer = (char *)malloc(sizeof(char) * bufferSize);
     if (!buffer) {
