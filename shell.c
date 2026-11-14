@@ -13,12 +13,6 @@ int process_arglist(int count, char** arglist);
 int prepare(void);
 int finalize(void);
 
-
-int process_arglist(int count, char** arglist)
-{
-	return 0;
-}
-
 int main(void)
 {
 	if (prepare() != 0)
